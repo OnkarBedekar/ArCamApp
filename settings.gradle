@@ -1,0 +1,10 @@
+rootProject.name = "ARcam"
+include ':app'
+
+//Following code will add sceneformsrc folder into this project
+include ':sceneform'
+project(':sceneform').projectDir = new File('sceneformsrc/sceneform')
+
+//Following code will add sceneformux folder into this project
+include ':sceneformux'
+project(':sceneformux').projectDir = new File('sceneformux/ux')
